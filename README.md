@@ -12,7 +12,7 @@ Helps to build and start universal react apps with ssr faster. Designed for and 
 
 ## Install:
 
-* `npm i --save @gc/react-app-tools`
+* `npm i --save @gnarlycode/react-app-tools`
 
 ## Commands:
 

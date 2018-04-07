@@ -1,5 +1,6 @@
 {
-  "name": "@gc/react-app-tools",
+  "name": "@gnarlycode/react-app-tools",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

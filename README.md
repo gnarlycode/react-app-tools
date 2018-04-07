@@ -2,7 +2,7 @@
 
 # React App Tools
 
-Helps to build and start universal react apps with ssr faster. Designed for and works best with [the boilerplate](https://github.com/gnarlycode/gc-boiler-react-redux)
+Helps to build and start universal react apps with ssr faster. Designed for and works best with [the boilerplate](https://github.com/gnarlycode/boiler-react-redux)
 
 ## Target stack:
 
@@ -12,7 +12,7 @@ Helps to build and start universal react apps with ssr faster. Designed for and 
 
 ## Install:
 
-* `npm i --save gc-react-app-tools`
+* `npm i --save @gc/react-app-tools`
 
 ## Commands:
 

@@ -1,0 +1,64 @@
+{
+  "name": "gc-react-app-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gnarly-react-app-build": "./bin/build.js",
+    "gnarly-react-app-dev": "./bin/serve-dev.js",
+    "gnarly-react-app-serve": "./bin/serve.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint -c ./.eslintrc.json \"./**/*.js?(x)\""
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "author": {
+    "name": "Dmitry Podlesny",
+    "email": "rezed93@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnarlycode/gc-react-app-tools"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "awesome-typescript-loader": "^5.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.3.2",
+    "cross-env": "^5.1.4",
+    "dotenv": "^5.0.1",
+    "dotenv-expand": "^4.2.0",
+    "dotenv-webpack": "^1.5.5",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "node-modules-path": "^1.0.1",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "rimraf": "^2.6.2",
+    "stats-webpack-plugin": "^0.6.2",
+    "svg-react-loader": "^0.4.5",
+    "typescript": "^2.8.1",
+    "typescript-styled-plugin": "^0.6.0",
+    "webpack": "^4.5.0",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-hot-server-middleware": "^0.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.11.1"
+  }
+}

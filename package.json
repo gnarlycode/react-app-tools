@@ -1,6 +1,5 @@
 {
   "name": "@gnarlycode/react-app-tools",
-  "private": false,
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
@@ -22,7 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gnarlycode/react-app-tools"
+    "url": "git+https://github.com/gnarlycode/react-app-tools.git"
+  },
+  "homepage": "https://github.com/gnarlycode/react-app-tools#readme",
+  "bugs": {
+    "url": "https://github.com/gnarlycode/react-app-tools/issues"
   },
   "license": "ISC",
   "dependencies": {

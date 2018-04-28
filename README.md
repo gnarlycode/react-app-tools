@@ -20,6 +20,10 @@ Helps to build and start universal react apps with ssr faster. Designed for and 
 * `gnarly-react-app-dev` — dev serve
 * `gnarly-react-app-serve` — serve
 
+## Also
+
+You can add additional express app to this starter using `EXPRESS_APP` key in your .env with path value
+
 ## Building use:
 
 * [Webpack](https://webpack.js.org/)

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gnarly-react-app-build",
     "dev": "gnarly-react-app-dev",
-    "st`art": "gnarly-react-app-serve"
+    "start": "gnarly-react-app-serve"
   },
   "author": "",
   "license": "ISC",

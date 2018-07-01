@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { hot } from 'react-hot-loader'
 
 const Wrap = styled.div`
   font-family: sans-serif;
@@ -11,4 +12,4 @@ const Wrap = styled.div`
   letter-spacing: 0.15;
 `
 
-export const App = () => <Wrap>Test Example</Wrap>
+export const App = hot(module)(() => <Wrap>Test Example</Wrap>)

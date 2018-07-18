@@ -33,17 +33,12 @@ Example:
 
 import { createServerEntry } from '@gnarlycode/react-app-tools'
 
-export default createServerEntry(({
-  assets,
-  next,
-  req,
-  res,
-  scripts,
-  stats,
-}) => {
-  // Do your stuff
-  req.end()
-}
+export default createServerEntry(
+  ({ assets, next, req, res, scripts, stats }) => {
+    // Do your stuff
+    req.end()
+  },
+)
 ```
 
 Look `test-example/src/entries/server.tsx` in this repo for another example.

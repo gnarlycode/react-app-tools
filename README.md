@@ -31,7 +31,7 @@ Example:
 ```jsx
 // src/entries/server.tsx
 
-import { createServerEntry } from '@gnarlycode/react-app-tools'
+import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
 
 export default createServerEntry(
   ({ assets, next, req, res, scripts, stats }) => {
@@ -41,7 +41,7 @@ export default createServerEntry(
 )
 ```
 
-Look `test-example/src/entries/server.tsx` in this repo for another example.
+Look `test-example/src/entries/server.tsx` in the repo for another example.
 
 ## Also
 

@@ -3,7 +3,7 @@ import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet } from 'styled-components'
 import { App } from 'components/App'
 import { Html } from 'components/Html'
-import { createServerEntry } from '@gnarlycode/react-app-tools'
+import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
 
 // Server Middleware
 export default createServerEntry(({ scripts, res, next }) => {

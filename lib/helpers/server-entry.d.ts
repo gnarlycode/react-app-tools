@@ -1,11 +1,4 @@
-export const getConfig: () => {
-  env: string
-  host: string
-  isDev: boolean
-  port: string
-}
-
-export const createServerEntry: (
+declare const createServerEntry: (
   cb: (
     args: {
       assets: any
@@ -17,3 +10,5 @@ export const createServerEntry: (
     },
   ) => void,
 ) => any
+
+export = createServerEntry

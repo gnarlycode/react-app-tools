@@ -1,7 +1,6 @@
 export const getConfig: () => {
   env: string
   host: string
-  isBrowser: boolean
   isDev: boolean
   port: string
 }

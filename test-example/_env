@@ -8,3 +8,9 @@ PORT=8080
 
 # Serve static with express (disable if static served with nginx for example)
 EXPRESS_SERVING_STATIC=true
+
+# Add babel polyfill
+# POLYFILL=true
+
+# Add express app
+# EXPRESS_APP=./api/index.js

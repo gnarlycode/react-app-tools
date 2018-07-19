@@ -49,7 +49,7 @@ Look `test-example/src/entries/server.tsx` in the repo for another example.
 - `EXPRESS_APP` — Add additional express app to server
 - `EXPRESS_SERVING_STATIC` — Enables static serving with express
 - `ROUTER_CONFIG` — Path to [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) for static generation
-- `POLYFILL` — Enables [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/)
+- `BABEL_POLYFILL` — Enables [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/)
 
 ## Building use:
 

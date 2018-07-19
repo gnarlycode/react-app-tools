@@ -13,7 +13,10 @@ EXPRESS_SERVING_STATIC=true
 # ROUTER_CONFIG=./src/routes
 
 # Add babel polyfill
-# POLYFILL=true
+# BABEL_POLYFILL=true
+
+# Babel plugin transform runtime
+# BABEL_RUNTIME=true
 
 # Add express app
 # EXPRESS_APP=./api/index.js

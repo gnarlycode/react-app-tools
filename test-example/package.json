@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "gnarly-react-app-build",
+    "build-static": "gnarly-react-app-build-static",
+    "build-all": "gnarly-react-app-build & gnarly-react-app-build-static",
     "dev": "gnarly-react-app-dev",
     "start": "gnarly-react-app-serve"
   },

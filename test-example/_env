@@ -9,6 +9,9 @@ PORT=8080
 # Serve static with express (disable if static served with nginx for example)
 EXPRESS_SERVING_STATIC=true
 
+# For static renderer
+# ROUTER_CONFIG=./src/routes
+
 # Add babel polyfill
 # POLYFILL=true
 

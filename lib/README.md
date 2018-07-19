@@ -18,7 +18,8 @@ Helps to build and start universal react apps with ssr faster. Designed for and 
 
 ## Commands:
 
-- `gnarly-react-app-build` — compile
+- `gnarly-react-app-build` — compile app
+- `gnarly-react-app-build-static` — compile static .html files (use regular build first)
 - `gnarly-react-app-dev` — dev serve
 - `gnarly-react-app-serve` — serve
 
@@ -43,9 +44,12 @@ export default createServerEntry(
 
 Look `test-example/src/entries/server.tsx` in the repo for another example.
 
-## Also
+## ENV Options
 
-You can add additional express app to this starter using `EXPRESS_APP` key in your .env with path value
+- `EXPRESS_APP` — Add additional express app to server
+- `EXPRESS_SERVING_STATIC` — Enables static serving with express
+- `ROUTER_CONFIG` — Path to [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) for static generation
+- `POLYFILL` — Enables [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/)
 
 ## Building use:
 

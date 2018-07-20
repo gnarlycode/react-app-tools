@@ -6,35 +6,21 @@ import { Html } from 'components/Html'
 import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
 
 // Server Middleware
-export default createServerEntry(({ scripts, res, next }) => {
-  // Load Data
-  try {
-    const sheet = new ServerStyleSheet()
-    const markup = renderToString(sheet.collectStyles(<App />))
+export default createServerEntry(({ scripts, res }) => {
+  const sheet = new ServerStyleSheet()
+  const markup = renderToString(sheet.collectStyles(<App />))
 
-    // Render Html Block
-    const html = renderToString(
-      <Html
-        markup={markup}
-        scripts={scripts}
-        styleEl={sheet.getStyleElement()}
-      />,
-    )
+  // Render Html Block
+  const html = renderToString(
+    <Html
+      markup={markup}
+      scripts={scripts}
+      styleEl={sheet.getStyleElement()}
+    />,
+  )
 
-    // Return Markup
-    res.write(`<!doctype html>${html}`)
+  // Return Markup
+  res.write(`<!doctype html>${html}`)
 
-    res.end()
-  } catch (err) {
-    // tslint:disable-next-line:no-console
-    console.error(err)
-
-    if (process.env.NODE_ENV === 'development') {
-      next(err)
-    } else {
-      res.status(500).send(`Internal Server Error`)
-    }
-
-    res.end()
-  }
+  res.end()
 })

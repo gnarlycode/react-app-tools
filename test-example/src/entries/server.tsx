@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToString, renderToStaticMarkup } from 'react-dom/server'
 import { ServerStyleSheet } from 'styled-components'
 import { App } from 'components/App'
 import { Html } from 'components/Html'
@@ -11,7 +11,7 @@ export default createServerEntry(({ scripts, res }) => {
   const markup = renderToString(sheet.collectStyles(<App />))
 
   // Render Html Block
-  const html = renderToString(
+  const html = renderToStaticMarkup(
     <Html
       markup={markup}
       scripts={scripts}
@@ -19,8 +19,6 @@ export default createServerEntry(({ scripts, res }) => {
     />,
   )
 
-  // Return Markup
-  res.write(`<!doctype html>${html}`)
-
-  res.end()
+  // Send Markup
+  res.send(`<!doctype html>${html}`)
 })

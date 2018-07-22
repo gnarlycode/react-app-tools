@@ -51,6 +51,7 @@ Look `test-example/src/entries/server.tsx` in the repo for another example.
 - `ROUTER_CONFIG` — Path to [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) for static generation
 - `BABEL_POLYFILL` — Enables [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/)
 - `BABEL_RUNTIME` — Enables [babel-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime.html)
+- `BASE_URL` — Adds url prefix to your app
 
 ## Building use:
 

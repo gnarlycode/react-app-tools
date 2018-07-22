@@ -20,3 +20,6 @@ EXPRESS_SERVING_STATIC=true
 
 # Add express app
 # EXPRESS_APP=./api/index.js
+
+# Base URL
+# BASE_URL=/base-url

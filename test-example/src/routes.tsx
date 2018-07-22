@@ -1,30 +1,31 @@
+const baseUrl = process.env.BASE_URL || ''
 export const routes = [
   {
     component: 'AppComponentMustBeHere',
     routes: [
       {
         component: 'HomePageComponentMustBeHere',
-        path: '/',
+        path: baseUrl + '/',
       },
       {
         component: 'SecondPageComponentMustBeHere',
-        path: '/second',
+        path: baseUrl + '/second',
       },
       {
         component: 'Third',
-        path: '/third/',
+        path: baseUrl + '/third/',
         routes: [
           {
             component: 'YouGotIt',
-            path: '/third-1',
+            path: baseUrl + '/third-1',
           },
           {
             component: 'YouGotIt',
-            path: '/third-2',
+            path: baseUrl + '/third-2',
           },
           {
             component: 'NotSupported',
-            path: '/third/:id',
+            path: baseUrl + '/third/:id',
           },
         ],
       },

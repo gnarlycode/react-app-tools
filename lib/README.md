@@ -44,14 +44,40 @@ export default createServerEntry(
 
 Look `test-example/src/entries/server.tsx` in the repo for another example.
 
-## ENV Options
+## Configure
 
-- `EXPRESS_APP` — Add additional express app to server
-- `EXPRESS_SERVING_STATIC` — Enables static serving with express
-- `ROUTER_CONFIG` — Path to [react-router-config](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config) for static generation
-- `BABEL_POLYFILL` — Enables [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill/)
-- `BABEL_RUNTIME` — Enables [babel-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime.html)
-- `BASE_URL` — Adds url prefix to your app
+You can create next files in root of you project to configure builder:
+
+- `gnarly.config.js` — default config
+- `gnarly.config.local.js` — local, extends default, do not commit
+- `gnarly.config.build.js` — for `npm run build` command, extends both above
+
+Availible options:
+
+```js
+module.exports = {
+  // Server listening
+  host: '0.0.0.0',
+  port: 8080,
+
+  // Url prefix
+  baseUrl: '/base-url',
+
+  // For static renderer, used when you run `npm run build-static` or `build-all`
+  routerConfig: './src/routes',
+
+  // Serve static with express (do not enable if static served with nginx for example)
+  expressStatic: true,
+
+  // Add extra express app
+  expressApp: './api/index.js',
+
+  // Add babel transform runtime
+  babelRuntime: true,
+}
+```
+
+Also you can create `_env` and `.env` for your extra configurations
 
 ## Building use:
 

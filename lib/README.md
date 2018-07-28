@@ -46,13 +46,13 @@ Look `test-example/src/entries/server.tsx` in the repo for another example.
 
 ## Configure
 
-You can create next files in root of you project to configure builder:
+You can create next files in root of your project to configure builder:
 
 - `gnarly.config.js` — default config
 - `gnarly.config.local.js` — local, extends default, do not commit
 - `gnarly.config.build.js` — for `npm run build` command, extends both above
 
-Availible options:
+Available options:
 
 ```js
 module.exports = {
@@ -67,13 +67,16 @@ module.exports = {
   routerConfig: './src/routes',
 
   // Serve static with express (do not enable if static served with nginx for example)
-  expressStatic: true,
+  serveStatic: true,
 
   // Add extra express app
   expressApp: './api/index.js',
 
   // Add babel transform runtime
   babelRuntime: true,
+
+  // Browsers list
+  browsers: ['last 2 versions', '>= 1%'],
 }
 ```
 

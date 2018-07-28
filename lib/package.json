@@ -19,7 +19,6 @@
     "type": "git",
     "url": "git+https://github.com/gnarlycode/react-app-tools.git"
   },
-  "types": "./index.d.ts",
   "homepage": "https://github.com/gnarlycode/react-app-tools#readme",
   "bugs": {
     "url": "https://github.com/gnarlycode/react-app-tools/issues"

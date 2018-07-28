@@ -10,7 +10,7 @@ module.exports = {
   routerConfig: './src/routes',
 
   // Serve static with express (disable if static served with nginx for example)
-  expressStatic: true,
+  serveStatic: true,
 
   // Add express app
   // expressApp: './api/index.js',

@@ -8,4 +8,3 @@ npm-debug.log
 build/
 .env
 gnarly.config.local.js
-gnarly.config.build.js

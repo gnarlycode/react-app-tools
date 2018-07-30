@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gnarly-react-app-build",
-    "build-static": "gnarly-react-app-build-static",
-    "build-all": "gnarly-react-app-build & gnarly-react-app-build-static",
-    "dev": "gnarly-react-app-dev",
-    "start": "gnarly-react-app-serve"
+    "build": "gnarly-app-build",
+    "build-static": "gnarly-app-build-static",
+    "build-all": "gnarly-app-build & gnarly-app-build-static",
+    "dev": "gnarly-app-dev",
+    "start": "gnarly-app-serve"
   },
   "author": "",
   "license": "ISC",

@@ -18,10 +18,10 @@ Helps to build and start universal react apps with ssr faster. Designed for and 
 
 ## Commands:
 
-- `gnarly-react-app-build` — compile app
-- `gnarly-react-app-build-static` — compile static .html files (use regular build first)
-- `gnarly-react-app-dev` — dev serve
-- `gnarly-react-app-serve` — serve
+- `gnarly-app-build` — compile app
+- `gnarly-app-build-static` — compile static .html files (use regular build first)
+- `gnarly-app-dev` — dev serve
+- `gnarly-app-serve` — serve
 
 ## Helpers
 
@@ -50,7 +50,6 @@ You can create next files in root of your project to configure builder:
 
 - `gnarly.config.js` — default config
 - `gnarly.config.local.js` — local, extends default, do not commit
-- `gnarly.config.build.js` — for `npm run build` command, extends both above
 
 Available options:
 
@@ -80,7 +79,7 @@ module.exports = {
 }
 ```
 
-Also you can create `_env` and `.env` for your extra configurations
+Also you can create `_env` and `.env` for extra configurations
 
 ## Building use:
 

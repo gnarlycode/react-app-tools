@@ -3,10 +3,10 @@
   "version": "1.6.0",
   "description": "",
   "bin": {
-    "gnarly-react-app-build": "./bin/build.js",
-    "gnarly-react-app-build-static": "./bin/build-static.js",
-    "gnarly-react-app-dev": "./bin/serve-dev.js",
-    "gnarly-react-app-serve": "./bin/serve.js"
+    "gnarly-app-build": "./bin/build.js",
+    "gnarly-app-build-static": "./bin/build-static.js",
+    "gnarly-app-dev": "./bin/serve-dev.js",
+    "gnarly-app-serve": "./bin/serve.js"
   },
   "scripts": {
     "eslint": "eslint -c ./.eslintrc.json \"./**/*.js?(x)\""

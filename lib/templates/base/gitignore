@@ -1,9 +1,10 @@
 .awcache/
 .DS_Store
+.vscode
 node_modules/
 dev_log.log
 webpack_stats.json
 npm-debug.log
 build/
 .env
-.vscode/
+gnarly.config.local.js

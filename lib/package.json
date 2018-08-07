@@ -1,6 +1,6 @@
 {
   "name": "@gnarlycode/react-app-tools",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "",
   "bin": {
     "gnarly-app-build": "./bin/build.js",
@@ -32,6 +32,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
+    "cross-spawn": "^6.0.5",
     "dotenv": "^6.0.0",
     "dotenv-webpack": "^1.5.7",
     "errorhandler": "^1.5.0",

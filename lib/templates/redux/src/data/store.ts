@@ -3,11 +3,13 @@ import { reducer } from 'data/reducer'
 import * as config from 'config'
 import isBrowser from 'is-in-browser'
 
-interface ConfigureStoreArgs<S> {
+interface ConfigureStoreArgs<S extends object> {
   init?: S
 }
 
-export const makeStore = <S>({ init = {} }: ConfigureStoreArgs<S> = {}) => {
+export const makeStore = <S extends object>(args: ConfigureStoreArgs<S>) => {
+  const { init = {} } = args
+
   // Middlewares
   const middlewares: Middleware[] = []
 

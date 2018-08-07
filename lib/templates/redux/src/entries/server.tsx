@@ -16,7 +16,7 @@ export default createServerEntry(async ({ scripts, res, req, next }) => {
   try {
     const routerContext: StaticRouterContext = {}
     const sheet = new ServerStyleSheet()
-    const store = makeStore()
+    const store = makeStore({})
 
     await getDataFetchers(req.url, routes, store)
 

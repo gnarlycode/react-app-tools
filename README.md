@@ -6,7 +6,7 @@
 
 Helps to build and start `universal` react apps with `ssr` faster.
 
-Designed for **[CREATE GNARLY APP](https://gist.github.com/manneredboor/c49b2e1b91517d360478c66b2580dc6f)**!
+Designed for **[CREATE GNARLY APP](https://github.com/gnarlycode/create-gnarly-app)**!
 
 ## TARGET STACK
 

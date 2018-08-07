@@ -2,32 +2,32 @@
 
 ###### _GNARLY CODE_ Presents
 
-# React App Tools
+# REACT APP TOOLS
 
-Helps to build and start universal react apps with ssr faster. Designed for and works best with [the boilerplate](https://github.com/gnarlycode/boiler-react-redux)
+Helps to build and start `universal` react apps with `ssr` faster.
 
-## Target stack:
+Designed for **[CREATE GNARLY APP](https://gist.github.com/manneredboor/c49b2e1b91517d360478c66b2580dc6f)**!
+
+## TARGET STACK
 
 - [TypeScript](https://www.typescriptlang.org)
 - [React](https://reactjs.org/)
 - [Styled Components](https://www.styled-components.com/)
 
-## Install:
+## INSTALL
 
 - `npm i --save @gnarlycode/react-app-tools`
 
-## Commands:
+## COMMANDS
 
 - `gnarly-app-build` — compile app
 - `gnarly-app-build-static` — compile static .html files (use regular build first)
 - `gnarly-app-dev` — dev serve
 - `gnarly-app-serve` — serve
 
-## Helpers
+## HELPERS
 
-### Create Server Entry
-
-Example:
+#### createServerEntry
 
 ```jsx
 // src/entries/server.tsx
@@ -44,7 +44,7 @@ export default createServerEntry(
 
 Look `test-example/src/entries/server.tsx` in the repo for another example.
 
-## Configure
+## CONFIG
 
 You can create next files in root of your project to configure builder:
 
@@ -81,16 +81,22 @@ module.exports = {
 
 Also you can create `_env` and `.env` for extra configurations
 
-## Building use:
+## CREDITS
 
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader)
-- [Svg React Loader](https://github.com/jhamlet/svg-react-loader)
-- [Dotenv Webpack](https://github.com/mrsteele/dotenv-webpack)
-
-## Serving use:
-
-- [Express](https://expressjs.com/)
+[`tslint`](https://palantir.github.io/tslint/)
+[`react-helmet`](https://github.com/nfl/react-helmet)
+[`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
+[`express`](https://expressjs.com/)
+[`dotenv`](https://github.com/motdotla/dotenv)
+[`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack)
+[`webpack`](https://webpack.js.org/)
+[`babel`](https://babeljs.io/)
+[`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
+[`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
+[`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
+[`@gnarlycode/react-route-fetch`](https://github.com/gnarlycode/react-components/tree/master/packages/react-route-fetch)
+[`@gnarlycode/react-scroll-state`](https://github.com/gnarlycode/react-components/tree/master/packages/react-scroll-state)
+[`inquirer`](https://github.com/SBoudrias/Inquirer.js/)
+[`commander`](https://github.com/tj/commander.js)
 
 ###### Author: Dmitry Podlesny

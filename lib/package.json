@@ -1,6 +1,6 @@
 {
   "name": "@gnarlycode/react-app-tools",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "",
   "bin": {
     "gnarly-app-build": "./bin/build.js",

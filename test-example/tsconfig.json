@@ -26,6 +26,9 @@
     "strictFunctionTypes": false,
     "target": "es6"
   },
-  "exclude": ["node_modules", "build"],
-  "include": ["src/**/*", "./typings/**/*"]
+  "include": [
+    "./src",
+    "./types",
+    "./node_modules/@gnarlycode/react-app-tools/types"
+  ]
 }

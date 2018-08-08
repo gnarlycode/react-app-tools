@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "gnarly-app-build",
-    "build-static": "gnarly-app-build-static",
-    "build-all": "gnarly-app-build & gnarly-app-build-static",
+    "build-static": "gnarly-app-build & gnarly-app-build-static",
     "dev": "gnarly-app-dev",
     "start": "gnarly-app-serve"
   },
@@ -14,12 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "@gnarlycode/react-app-tools": "../lib",
+    "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.3",
     "styled-components": "^3.3.3"
   },
   "devDependencies": {
+    "@types/express": "^4.16.0",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6"
   }

@@ -4,16 +4,13 @@ module.exports = {
   port: 8080,
 
   // Url prefix
-  baseUrl: '/base-url',
+  // baseUrl: '/base-url',
 
   // For static renderer
   routerConfig: './src/routes',
 
   // Serve static with express (disable if static served with nginx for example)
   serveStatic: true,
-
-  // Add express app
-  // expressApp: './api/index.js',
 
   // Add babel transform runtime
   babelRuntime: true,

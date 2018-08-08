@@ -4,45 +4,21 @@
 
 # REACT APP TOOLS
 
-Helps to build and start `universal` react apps with `ssr` faster.
+## DESIGNED FOR **[CREATE-GNARLY-APP](https://github.com/gnarlycode/create-gnarly-app)**!
 
-Designed for **[CREATE GNARLY APP](https://github.com/gnarlycode/create-gnarly-app)**!
-
-## TARGET STACK
-
-- [TypeScript](https://www.typescriptlang.org)
-- [React](https://reactjs.org/)
-- [Styled Components](https://www.styled-components.com/)
-
-## INSTALL
-
-- `npm i --save @gnarlycode/react-app-tools`
+Helps to build `universal` or `static` react apps.
 
 ## COMMANDS
 
-- `gnarly-app-build` — compile app
-- `gnarly-app-build-static` — compile static .html files (use regular build first)
-- `gnarly-app-dev` — dev serve
-- `gnarly-app-serve` — serve
+🕹 **`npm run dev`** — dev server (hot reload, watch mode etc)
 
-## HELPERS
+🕹 **`npm run build`** — build the app
 
-#### createServerEntry
+🕹 **`npm run build-static`** — build the app with static html's
 
-```jsx
-// src/entries/server.tsx
+🕹 **`npm start`** — serve builded app
 
-import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
-
-export default createServerEntry(
-  ({ assets, next, req, res, scripts, stats }) => {
-    // Do your stuff
-    req.end()
-  },
-)
-```
-
-Look `test-example/src/entries/server.tsx` in the repo for another example.
+🕹 **`npm run tsint`** — check linter rules
 
 ## CONFIG
 
@@ -80,20 +56,25 @@ Also you can create `_env` and `.env` for extra configurations
 
 ## CREDITS
 
-[`tslint`](https://palantir.github.io/tslint/)
-[`react-helmet`](https://github.com/nfl/react-helmet)
-[`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
-[`express`](https://expressjs.com/)
-[`dotenv`](https://github.com/motdotla/dotenv)
-[`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack)
-[`webpack`](https://webpack.js.org/)
-[`babel`](https://babeljs.io/)
-[`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
-[`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
-[`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
 [`@gnarlycode/react-route-fetch`](https://github.com/gnarlycode/react-components/tree/master/packages/react-route-fetch)
 [`@gnarlycode/react-scroll-state`](https://github.com/gnarlycode/react-components/tree/master/packages/react-scroll-state)
-[`inquirer`](https://github.com/SBoudrias/Inquirer.js/)
+[`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
+[`babel`](https://babeljs.io/)
 [`commander`](https://github.com/tj/commander.js)
+[`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack)
+[`dotenv`](https://github.com/motdotla/dotenv)
+[`express`](https://expressjs.com/)
+[`inquirer`](https://github.com/SBoudrias/Inquirer.js/)
+[`react-helmet`](https://github.com/nfl/react-helmet)
+[`react-hot-loader`](https://github.com/gaearon/react-hot-loader)
+[`react-router`](https://reactjs.org/)
+[`react`](https://reactjs.org/)
+[`redux`](https://redux.js.org/)
+[`styled-components`](https://www.styled-components.com/)
+[`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
+[`tslint`](https://palantir.github.io/tslint/)
+[`typescript`](https://www.typescriptlang.org)
+[`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
+[`webpack`](https://webpack.js.org/)
 
 ###### Author: Dmitry Podlesny

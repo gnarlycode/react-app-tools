@@ -68,9 +68,6 @@ module.exports = {
   // Serve static with express (do not enable if static served with nginx for example)
   serveStatic: true,
 
-  // Add extra express app
-  expressApp: './api/index.js',
-
   // Add babel transform runtime
   babelRuntime: true,
 

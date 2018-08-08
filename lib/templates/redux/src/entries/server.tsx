@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
+import { RequestHandler } from 'express'
 import { renderToString, renderToStaticMarkup } from 'react-dom/server'
 import { StaticRouter, StaticRouterContext } from 'react-router'
 import { renderRoutes } from 'react-router-config'
@@ -9,11 +10,11 @@ import { routes } from 'routes'
 import { makeStore } from 'data/store'
 import { Html } from 'components/Layout/Html'
 import { getDataFetchers } from '@gnarlycode/react-route-fetch'
-import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
+import unwrapStats from '@gnarlycode/react-app-tools/helpers/unwrap-stats'
 
-// Server Middleware
-export default createServerEntry(async ({ scripts, res, req, next }) => {
+export default (allstats: any): RequestHandler => async (req, res, next) => {
   try {
+    const { scripts } = unwrapStats(allstats)
     const routerContext: StaticRouterContext = {}
     const sheet = new ServerStyleSheet()
     const store = makeStore({})
@@ -52,4 +53,4 @@ export default createServerEntry(async ({ scripts, res, req, next }) => {
   } catch (err) {
     next(err)
   }
-})
+}

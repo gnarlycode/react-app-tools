@@ -1,15 +1,17 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
+import { RequestHandler } from 'express'
 import { renderToString, renderToStaticMarkup } from 'react-dom/server'
 import { StaticRouter, StaticRouterContext } from 'react-router'
 import { renderRoutes } from 'react-router-config'
 import { ServerStyleSheet } from 'styled-components'
 import { routes } from 'routes'
 import { Html } from 'components/Layout/Html'
-import createServerEntry from '@gnarlycode/react-app-tools/helpers/server-entry'
+import unwrapStats from '@gnarlycode/react-app-tools/helpers/unwrap-stats'
 
 // Server Middleware
-export default createServerEntry(({ scripts, res, req }) => {
+export default (allstats: any): RequestHandler => (req, res) => {
+  const { scripts } = unwrapStats(allstats)
   const routerContext: StaticRouterContext = {}
   const sheet = new ServerStyleSheet()
 
@@ -39,4 +41,4 @@ export default createServerEntry(({ scripts, res, req }) => {
   } else {
     res.send(`<!doctype html>${html}`)
   }
-})
+}

@@ -1,11 +1,11 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import {
   defaultBodyLockClass,
   defaultHtmlLockClass,
 } from '@gnarlycode/react-scroll-state'
 import { colors } from 'utils/styles'
 
-injectGlobal`
+createGlobalStyle`
   * {
     min-width: 0;
     min-height: 0;

@@ -19,7 +19,7 @@
     "plugins": [
       {
         "name": "typescript-styled-plugin",
-        "tags": ["styled", "css", "transition", "injectGlobal"]
+        "tags": ["styled", "css", "transition", "createGlobalStyle"]
       }
     ],
     "sourceMap": true,

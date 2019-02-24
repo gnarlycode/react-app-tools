@@ -24,7 +24,8 @@
     ],
     "sourceMap": true,
     "strictFunctionTypes": false,
-    "target": "es6"
+    "target": "es6",
+    "types": []
   },
   "include": [
     "./src",

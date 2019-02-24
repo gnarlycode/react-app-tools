@@ -7,7 +7,6 @@ import {
 } from '@gnarlycode/react-scroll-state'
 import { colors } from 'utils/styles'
 import { GlobalStyles } from 'components/Layout/GlobalStyles'
-import 'utils/defaultStyles'
 
 const App = styled.div`
   display: flex;

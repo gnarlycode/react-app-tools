@@ -5,7 +5,7 @@ import {
 } from '@gnarlycode/react-scroll-state'
 import { colors } from 'utils/styles'
 
-createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     min-width: 0;
     min-height: 0;

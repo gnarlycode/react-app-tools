@@ -6,6 +6,7 @@ import {
   ScrollStateProvider,
 } from '@gnarlycode/react-scroll-state'
 import { colors } from 'utils/styles'
+import { GlobalStyles } from 'components/Layout/GlobalStyles'
 import 'utils/defaultStyles'
 
 const App = styled.div`
@@ -23,6 +24,7 @@ export const AppContainer = ({ route }: AppContainerProps) => {
   return (
     <ScrollStateProvider>
       <ScrollRestorer />
+      <GlobalStyles />
       <App>{route && renderRoutes(route.routes)}</App>
     </ScrollStateProvider>
   )

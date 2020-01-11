@@ -1,13 +1,12 @@
 {
   "name": "@gnarlycode/react-app-tools",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "bin": {
     "gnarly-app-build": "./bin/build.js",
     "gnarly-app-build-static": "./bin/build-static.js",
     "gnarly-app-dev": "./bin/serve-dev.js",
-    "gnarly-app-serve": "./bin/serve.js",
-    "gnarly-app-analyze": "./bin/build.js --analyze"
+    "gnarly-app-serve": "./bin/serve.js"
   },
   "author": {
     "name": "Dmitry Podlesny",

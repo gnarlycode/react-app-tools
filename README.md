@@ -44,9 +44,6 @@ module.exports = {
   // Serve static with express (do not enable if static served with nginx for example)
   serveStatic: true,
 
-  // Add babel transform runtime
-  babelRuntime: true,
-
   // Browsers list
   browsers: ['last 2 versions', '>= 1%'],
 }
@@ -56,8 +53,6 @@ Also you can create `_env` and `.env` for extra configurations
 
 ## CREDITS
 
-[`@gnarlycode/react-route-fetch`](https://github.com/gnarlycode/react-components/tree/master/packages/react-route-fetch)
-[`@gnarlycode/react-scroll-state`](https://github.com/gnarlycode/react-components/tree/master/packages/react-scroll-state)
 [`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
 [`babel`](https://babeljs.io/)
 [`commander`](https://github.com/tj/commander.js)
@@ -70,9 +65,9 @@ Also you can create `_env` and `.env` for extra configurations
 [`react-router`](https://reactjs.org/)
 [`react`](https://reactjs.org/)
 [`redux`](https://redux.js.org/)
-[`styled-components`](https://www.styled-components.com/)
+[`astroturf`](https://github.com/4Catalyzer/astroturf)
 [`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
-[`tslint`](https://palantir.github.io/tslint/)
+[`eslint`](https://eslint.org/)
 [`typescript`](https://www.typescriptlang.org)
 [`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
 [`webpack`](https://webpack.js.org/)

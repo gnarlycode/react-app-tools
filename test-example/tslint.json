@@ -1,6 +1,0 @@
-{
-  "linterOptions": {
-    "exclude": ["**/node_modules/**/*"]
-  },
-  "extends": "@gnarlycode/tslint-config"
-}

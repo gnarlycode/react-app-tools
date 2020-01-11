@@ -1,14 +1,14 @@
-import * as React from 'react'
+import React from 'react'
 
 // Typings
-interface HtmlProps {
+type HtmlProps = {
   markup: string
   scripts?: string[]
-  styleEl?: JSX.Element | JSX.Element[]
+  styles?: string[]
 }
 
 // Component
-export function Html({ markup, scripts = [], styleEl }: HtmlProps) {
+export const Html = ({ markup, scripts = [], styles = [] }: HtmlProps) => {
   // prettier-ignore
   return (
     <html lang="ru">
@@ -19,7 +19,9 @@ export function Html({ markup, scripts = [], styleEl }: HtmlProps) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="og:type" content="website" />
-        {styleEl}
+        {styles.map((src, i) => (
+          <link rel="stylesheet" href={src} key={i} />
+        ))}
       </head>
       <body>
         <div id="root" dangerouslySetInnerHTML={{ __html: markup }} />

@@ -11,7 +11,4 @@ module.exports = {
 
   // Serve static with express (disable if static served with nginx for example)
   serveStatic: true,
-
-  // Add babel transform runtime
-  babelRuntime: true,
 }

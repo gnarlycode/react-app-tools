@@ -3,6 +3,7 @@ declare const unwrapStats: <S>(
 ) => {
   assets: any
   scripts: string[]
+  styles: string[]
   stats: any
 }
 

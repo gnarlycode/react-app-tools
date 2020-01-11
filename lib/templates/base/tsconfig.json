@@ -12,23 +12,14 @@
     "newLine": "LF",
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": false,
     "outDir": "build",
-    "plugins": [
-      {
-        "name": "typescript-styled-plugin",
-        "tags": ["styled", "css", "transition", "createGlobalStyle"]
-      }
-    ],
     "sourceMap": true,
     "strictFunctionTypes": false,
     "target": "es6",
-    "types": []
+    "types": [],
+    "resolveJsonModule": true
   },
-  "include": [
-    "./src",
-    "./types",
-    "./node_modules/@gnarlycode/react-app-tools/types"
-  ]
+  "include": ["./src"]
 }

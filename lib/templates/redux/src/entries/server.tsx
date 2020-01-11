@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { RequestHandler } from 'express'
 import { renderToString, renderToStaticMarkup } from 'react-dom/server'

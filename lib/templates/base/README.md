@@ -16,8 +16,8 @@
 
 - `prettier`
 - `editorconfig`
-- `tslint`
+- `eslint`
 - `typescript`
-- `styled-components`
+- `astroturf`
 
 # [MORE INFO](https://github.com/gnarlycode/create-gnarly-app)

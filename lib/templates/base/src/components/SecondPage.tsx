@@ -1,14 +1,8 @@
-import * as React from 'react'
-import styled from 'styled-components'
-import { Helmet } from 'react-helmet'
+import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
+import { Title } from 'components/Common/Title'
 import * as links from 'utils/links'
-
-const Title = styled.div`
-  margin: 60px 0;
-  font-size: 18px;
-  text-align: center;
-`
 
 export const SecondPage = () => {
   return (

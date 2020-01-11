@@ -1,11 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import {
-  defaultBodyLockClass,
-  defaultHtmlLockClass,
-} from '@gnarlycode/react-scroll-state'
-import { colors } from 'utils/styles'
+import { css } from 'astroturf'
 
-export const GlobalStyles = createGlobalStyle`
+css`
   * {
     min-width: 0;
     min-height: 0;
@@ -15,17 +10,17 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: inherit;
   }
 
   body {
     font-size: 14px;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: ${colors.text};
     -webkit-text-size-adjust: 100%;
-    background-color: ${colors.bg};
+    color: $colorText;
   }
 
   html,
@@ -35,20 +30,31 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100%;
   }
 
-  #root {
+  :global(#root) {
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100%;
   }
 
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
     margin: 0;
     padding: 0;
     font-size: 100%;
     font-weight: normal;
   }
 
-  ol, ul {
+  ol,
+  ul {
     list-style: none;
   }
 
@@ -67,7 +73,10 @@ export const GlobalStyles = createGlobalStyle`
     resize: none;
   }
 
-  input, textarea, button, select {
+  input,
+  textarea,
+  button,
+  select {
     border: 0;
     outline: none;
     font: inherit;
@@ -75,26 +84,26 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-appearance: none;
   }
 
-  input, textarea, button, select, label, a {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  input,
+  textarea,
+  button,
+  select,
+  label,
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  img, embed, iframe, object, audio, video {
+  img,
+  embed,
+  iframe,
+  object,
+  audio,
+  video {
     max-width: 100%;
     height: auto;
   }
 
   a {
-    color: ${colors.brand};
     text-decoration: none;
-  }
-
-  html.${defaultHtmlLockClass} {
-    overflow-y: scroll;
-  }
-
-  body.${defaultBodyLockClass} {
-    overflow: hidden;
-    position: fixed;
   }
 `

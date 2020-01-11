@@ -1,7 +1,6 @@
-import * as React from 'react'
+import React from 'react'
 import { Router, RequestHandler } from 'express'
 import { renderToString, renderToStaticMarkup } from 'react-dom/server'
-import { ServerStyleSheet } from 'styled-components'
 import { App } from 'components/App'
 import { Html } from 'components/Html'
 import unwrapStats from '@gnarlycode/react-app-tools/helpers/unwrap-stats'
@@ -16,18 +15,13 @@ export default (allstats: any): RequestHandler => {
     })
   })
 
-  router.use((req, res, next) => {
-    const { scripts } = unwrapStats(allstats)
-    const sheet = new ServerStyleSheet()
-    const markup = renderToString(sheet.collectStyles(<App />))
+  router.use((req, res) => {
+    const { scripts, styles } = unwrapStats(allstats)
+    const markup = renderToString(<App />)
 
     // Render Html Block
     const html = renderToStaticMarkup(
-      <Html
-        markup={markup}
-        scripts={scripts}
-        styleEl={sheet.getStyleElement()}
-      />,
+      <Html markup={markup} scripts={scripts} styles={styles} />,
     )
 
     // Send Markup

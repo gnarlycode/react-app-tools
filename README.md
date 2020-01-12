@@ -43,9 +43,6 @@ module.exports = {
 
   // Serve static with express (do not enable if static served with nginx for example)
   serveStatic: true,
-
-  // Browsers list
-  browsers: ['last 2 versions', '>= 1%'],
 }
 ```
 
@@ -53,7 +50,6 @@ Also you can create `_env` and `.env` for extra configurations
 
 ## CREDITS
 
-[`awesome-typescript-loader`](https://github.com/s-panferov/awesome-typescript-loader)
 [`babel`](https://babeljs.io/)
 [`commander`](https://github.com/tj/commander.js)
 [`dotenv-webpack`](https://github.com/mrsteele/dotenv-webpack)
@@ -66,7 +62,7 @@ Also you can create `_env` and `.env` for extra configurations
 [`react`](https://reactjs.org/)
 [`redux`](https://redux.js.org/)
 [`astroturf`](https://github.com/4Catalyzer/astroturf)
-[`svg-react-loader`](https://github.com/jhamlet/svg-react-loader)
+[`svg-sprite-loader`](https://github.com/JetBrains/svg-sprite-loader)
 [`eslint`](https://eslint.org/)
 [`typescript`](https://www.typescriptlang.org)
 [`webpack-hot-server-middleware`](https://www.npmjs.com/package/webpack-hot-server-middleware)
